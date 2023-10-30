@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            border: solid red;
+            width: 598px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 20px;
+        }
+
+        header h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        nav{
+            display: flex;
+            /* border: solid red; */
+            height: 60px;
+            width: 598px;
+            background-color: black;
+            justify-content: space-between;
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+
+        nav h3{
+            /* border: solid blue; */
+            color: white;
+            width: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            /* border-radius: ; */
+
+        }
+
+        nav h3 a{
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .trangle{
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 60px solid #ff0000;
+            margin-left: -100px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border: solid red; */
+            margin-right: 25px;
+            width: 250px;
+            text-decoration: none;
+        }
+
+        nav ul li{
+            display: flex;
+            
+        }
+
+        nav ul li a{
+            display: flex;
+            list-style: none;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover{
+            color: red;
+        }
+
+        .headd1{
+        width: 598px;
+        height: 50px;
+        margin-bottom: 5px;
+        /* border: solid greenyellow; */
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .headd1 h3{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 50px;
+        /* border: solid red; */
+        text-align: center;
+       }
+
+       main{
+        width: 598px;
+        height: 100%;
+        /* border: solid rgb(0, 0, 0); */
+        border-radius: 20px;
+       }
+
+       main section{
+        width: 598px;
+        height: 150px;
+       }
+
+       main section h4{
+        /* border: solid greenyellow; */
+        width: 598px;
+        height: 80px;
+        font-size: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding: 20px;
+
+       }
+
+       main section audio{
+        display: flex;
+        /* border: solid blue; */
+        width: 590px;
+        height: 70px;
+        margin-top: -5px;
+       }
+
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Shan</h1>
+    </header>
+
+    <nav>
+        <h3><a href="index.html">လိၵ်ႈတႆး</a></h3>
+
+        <div class="trangle"></div>
+
+        <ul>
+            <li><a href="#">ပိုၼ်ႉထၢၼ်</a></li>
+            <li><a href="#">ၽိုၵ်းလူဢၢၼ်ႇ</a></li>
+            <li><a href="#">ဢပုမ်ႇ</a></li>
+        </ul>
+    </nav>
+
+    <div class="headd1">
+        <h3>ပိုၼ်ႉထၢၼ်(ၽိုၵ်းဢၼ်ႇ)</h3>
+    </div>
+
+    <main>
+        <section>
+            <h4>
+                <p>ၵႃ</p>
+                <p>ၵႃႇ</p>
+                <p>ၵႃႈ</p>
+                <p>ၵႃး</p>
+                <p>ၵႃႉ</p>
+            </h4>
+
+            <audio controls>
+                <source src="#" type="mp3">
+            </audio>
+        </section>
+        <hr style="box-shadow: 0 5px 4px; margin-top: 10px;">
+
+        <section>
+            <h4>
+                <p>ၵီ</p>
+                <p>ၵီႇ</p>
+                <p>ၵီႈ</p>
+                <p>ၵီး</p>
+                <p>ၵီႉ</p>
+            </h4>
+
+            <audio controls>
+                <source src="#" type="mp3">
+            </audio>
+        </section>
+        <hr style="box-shadow: 0 5px 4px; margin-top: 10px;">
+
+        <section>
+            <h4>
+                <p>ၵူ</p>
+                <p>ၵူႇ</p>
+                <p>ၵူႈ</p>
+                <p>ၵူး</p>
+                <p>ၵူႉ</p>
+            </h4>
+
+            <audio controls>
+                <source src="#" type="mp3">
+            </audio>
+        </section>
+        <hr style="box-shadow: 0 5px 4px; margin-top: 10px;">
+
+        <section>
+            <h4>
+                <p>ၵေ</p>
+                <p>ၵေႇ</p>
+                <p>ၵေႈ</p>
+                <p>ၵေး</p>
+                <p>ၵေႉ</p>
+            </h4>
+
+            <audio controls>
+                <source src="#" type="mp3">
+            </audio>
+        </section>
+        <hr style="box-shadow: 0 5px 4px; margin-top: 10px;">
+
+        <section>
+            <h4>
+                <p>ၵႄ</p>
+                <p>ၵႄႇ</p>
+                <p>ၵႄႈ</p>
+                <p>ၵႄး</p>
+                <p>ၵႄႉ</p>
+            </h4>
+
+            <audio controls>
+                <source src="#" type="mp3">
+            </audio>
+        </section>
+        <hr style="box-shadow: 0 5px 4px; margin-top: 10px;">
+
+        <section>
+            <h4>
+                <p>ၵေႃ</p>
+                <p>ၵေႃႇ</p>
+                <p>ၵေႃႈ</p>
+                <p>ၵေႃး</p>
+                <p>ၵေႃႉ</p>
+            </h4>
+
+            <audio controls>
+                <source src="#" type="mp3">
+            </audio>
+        </section>
+        <hr style="box-shadow: 0 5px 4px; margin-top: 10px;">
+
+        <section>
+            <h4>
+                <p>ၵိုဝ်</p>
+                <p>ၵိုဝ်ႇ</p>
+                <p>ၵိုဝ်ႈ</p>
+                <p>ၵိုဝ်း</p>
+                <p>ၵိုဝ်ႉ</p>
+            </h4>
+
+            <audio controls>
+                <source src="#" type="mp3">
+            </audio>
+        </section>
+        <hr style="box-shadow: 0 5px 4px; margin-top: 10px;">
+
+        <section>
+            <h4>
+                <p>ၵိူဝ်</p>
+                <p>ၵိူဝ်ႇ</p>
+                <p>ၵိူဝ်ႈ</p>
+                <p>ၵိူဝ်း</p>
+                <p>ၵိူဝ်ႉ</p>
+            </h4>
+
+            <audio controls>
+                <source src="#" type="mp3">
+            </audio>
+        </section>
+        <hr style="box-shadow: 0 5px 4px; margin-top: 10px;">
+
+        <section>
+            <h4>
+                <p>ၵူဝ်</p>
+                <p>ၵူဝ်ႇ</p>
+                <p>ၵူဝ်ႈ</p>
+                <p>ၵူဝ်း</p>
+                <p>ၵူဝ်ႉ</p>
+            </h4>
+
+            <audio controls>
+                <source src="#" type="mp3">
+            </audio>
+        </section>
+        <hr style="box-shadow: 0 5px 4px; margin-top: 10px;">
+
+      
+    </main>
+
+
+    
+</body>
+</html>
