@@ -1,529 +1,274 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math</title>
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/c3/Deus_mathematics.png">
-    
-
-    <style>
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* body start */
+body{
+    background-color: rgb(103, 241, 241);
+}
+
+/* body end */
+
 /* header start */
 header{
-    border: solid red;
-    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 578px;
     height: 70px;
+    background-color: white;
+    /* border: solid red; */
+}
+/* header end */
+
+/* nav start */
+nav{
+    width: 578px;
+    height: 90px;
+    /* border: solid red; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10px;
 }
 
- header h1{
-    /* border: solid white; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 50px;
-    color: white;
- }
- /* header end */
-
- /* nav start */
- nav{
-    border: solid red;
-    width: 578px;
+nav img{
+    width: 80px;
     height: 80px;
+    border: solid 2px black;
+    border-radius: 100%;
     display: flex;
-    justify-content: space-between;
-    background-color: red;
-    box-shadow: 0 5px 10px;
-    position: sticky;
-    top: 0;
-
- }
-
- nav img{
-    border: solid white;
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
+    margin-top: 2px;
     margin-left: 20px;
- }
-
- nav ul{
-    /* border: solid white; */
-    width: 350px;
-    height: 70px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    border-radius: 0px 0px 0px 20px;
-    margin-right: -5px;
-    background-color: black;
-    box-shadow: 0px 3px 8px white;
 }
 
-nav ul li a{
-    display: flex;
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
+nav h3{
+    /* border: solid blue; */
+   width: 100px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 25px;
+   margin-left: 15px;
+   font-size: 20px;
 }
-
-nav ul li a:hover:active{
-    display: flex;
-    font-size: 20px;
-    text-decoration: none;
-    color: rgb(255, 0, 0);
+nav h3:hover{
+    text-shadow: 0px 2px 2px;
+    color: red;
+    
 }
 
 /* nav end */
-
-/* main */
+/* main start */
 main{
-    width: 578px;
+    /* border: solid blue; */
+    width: 550px;
     height: 100%;
-    background-color: rgb(233, 221, 221);
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
 }
-
 /* main end */
 
-/* a start */
-/* a stsrt */.a{
-    display: flex;
-    width: 578px;
-    height: 50px;
-    background-color: rgb(194, 191, 191);
-}
-.a p{
-    border-radius: 0px 50px 0px 0px;
-    /* border: solid black; */
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-}
-/* a end */
-
-/* section start */
-section{
+/* link start */
+.video{
     /* border: solid red; */
-    width: 578px;
-    height: 70px;
+    width: 100%;
+    height: 120px;
+    align-items: end;
+    background-color: aliceblue;
+}
+.video .img {
+    /* border: solid red; */
+    height: 80px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-section p{
-    
-    /* border: solid black; */
-    width: 90px;
-    height: 50px;
-    border-radius: 15px 10px 0px 20px;
-    column-count: 5;
+.video .img img{
+    border: solid black;
+    width: 70px;
+    height: 70px;
+    border-radius: 10%; 
+    margin-top: 25px;
+}
+
+.video ul {
+    display: flex;
+    /* border: solid red; */ 
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    list-style: none;
+}
+
+.video ul li a{
+    display: flex;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 3.7rem;
+    color: black;
+}
+
+.video ul li a:hover{
+    color: red;
+    text-shadow: 0px 1px 14px;
+}
+.video ul li a:active{
+    color: red;
+    text-shadow: 0px 1px 14px;
+}
+/* link end */
+
+/* slide start */
+.slide{
+    width: 100%;
+    height: 190px;
+    margin-top: 10px;
+    display: flex;
+    animation: bg-slide 20s linear infinite;
+    background-repeat: repeat;
+    background-size: 50%;
+    object-fit: cover; 
+}
+@keyframes bg-slide{
+    0%{
+        background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/b8/cb/0e/b8cb0e1324b824365186ec78ebfee99e/b8cb0e1324b824365186ec78ebfee99e.17.jpg);
+    }
+
+    30%{
+        background-image: url(https://img-egc.xnxx-cdn.com/videos/thumbs169xnxxposter/dd/e1/d0/dde1d05de989aae0d119a2c43b9b258b/dde1d05de989aae0d119a2c43b9b258b.15.jpg);
+    }
+
+    60%{
+        background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/64/68/50/646850feb3170b270d5219bc5402a0b9-1/646850feb3170b270d5219bc5402a0b9.29.jpg);
+    }
+
+    90%{
+        background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/84/be/08/84be0818a7726906effd8f3f14027b2d/84be0818a7726906effd8f3f14027b2d.24.jpg);
+    }
+
+    100%{
+        background-image: url(https://img-l3.xnxx-cdn.com/videos/thumbs169xnxxll/17/9e/22/179e22b9e2026a76c51e5955a0c35190/179e22b9e2026a76c51e5955a0c35190.12.jpg);
+    }
+}
+
+
+/* slide end */
+
+/* support start */
+.support{
+    width: 100%;
+    height: 190px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+.support .imgone {
+    width: 100%;
+    height: 90px;
+    /* border: solid red; */
+    display: flex;
+    margin-top: 3px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.support .imgone img{
+    border:solid blue;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    justify-content: space-evenly;
+}
+
+.support .imgtwo {
+    width: 100%;
+    height: 90px;
+    /* border: solid red; */
+    display: flex;
+    margin-top: 3px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.support .imgtwo img{
+    border:solid blue;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    justify-content: space-evenly;
+}
+/* support end */
+
+
+/* contect start */
+.contect{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    display: flex;
+}
+
+.contect img{
+    border: solid red;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.contect .contect-p{
+    /* border: solid blue; */
+    width: 350px;
+    height: 100%;
+    margin-left: 0px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contect .contect-p p{
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 10px;
+    height: 50px;
+    
+}
+.contect .contect-p a{
+    border: solid red;
+    border-radius: 20px;
+    background-color: red;
+    text-decoration: none;
+    color: black;
+}
+/* contect end */
+
+
+/* section start */
+section{
+    width: 100%;
+    height: 410px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    box-shadow: 0px 4px 6px;
+}
+
+section p{
+    /* border: solid red; */
+    width: 95%;
+    height: 50px;
     font-size: 25px;
-    color: white;
-    background-color: black;
-    box-shadow: 0 2px 8px rgb(0, 0, 0);
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 5px;
 }
-
-section p:hover:active{
-    background-color: rgb(0, 4, 255);
-}
-
-@media (min-width: 579px){
-    header{
-        width: 100%;
-    }
-
-    nav{
-        width: 100%;
-    }
-
-    main{
-        width: 100%;
-    }
-    .a{
-        width: 100%;
-    }
-
-    main section {
-        width: 100%;
-        
-    }
-
-    main section p{
-        
-    }
-}
-    </style>
-
-</head>
-<body>
-    <!-- Header start -->
-    <header>
-        <h1>Math</h1>
-    </header>
-
-    <!-- header end -->
-
-    <!-- nav start -->
-    <nav>
-        <img src="https://scontent.fcnx4-1.fna.fbcdn.net/v/t39.30808-6/387773558_122094351110074854_3617643728070129939_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeENjcWmDeuJp8ntXuhsVyKfKXPV2G2BJ6Ypc9XYbYEnpvt1OQJutrPS0SA3Ely5e-evsaZWrwE_3edJ8DqdupzS&_nc_ohc=02zVA6_Wpl8AX90pg-j&_nc_ht=scontent.fcnx4-1.fna&oh=00_AfC7ld0UL56Q3HUx_pzGD5w76--VLmKSKqc_DZAdA3sSdA&oe=65465724" alt="">
-
-        <ul>
-            <li><a href="#">မၢႆၵုၼ်း</a></li>
-            <li><a href="#">ၸႅၵ်ႇ</a></li>
-            <li><a href="#">မၢႆထွၼ်</a></li>
-        </ul>
-    </nav>
-    <!-- nav end -->
-
-    <!-- main start -->
-    <main>
-        <div class="a">
-            <p>ပိုၼ်ႉထၢၼ် မၢႆလေႃး (+)</p>
-        </div>
-
-        <section>
-            <p onclick="a1();">12+67</p>
-            <p onclick="a2();">8+629</p>
-            <p onclick="a3();">125+73</p>
-            <p onclick="a4();">13+31</p>
-            <p onclick="a5();">54+21</p>
-        </section>
-            
-        <section>
-            <p onclick="a6();">18+91</p>
-            <p onclick="a7();">51+88</p>
-            <p onclick="a8();">76+52</p>
-            <p onclick="a9();">269</p>
-            <p onclick="a10();">662+91</p>
-        </section>
-
-        <section>
-            <p onclick="a11();">17+72</p>
-            <p onclick="a12();">16+28</p>
-            <p onclick="a13();">98+21</p>
-            <p onclick="a14();">56+322</p>
-            <p onclick="a15();">75+38</p>
-        </section>
-
-        <section>
-            <p onclick="a16();">97+34</p>
-            <p onclick="a17();">877+65</p>
-            <p onclick="a18();">93+88</p>
-            <p onclick="a19();">63+874</p>
-            <p onclick="a20();">78+74</p>
-        </section>
-
-        <section>
-            <p onclick="a21();">37+84</p>
-            <p onclick="a22();">746+82</p>
-            <p onclick="a23();">68+32</p>
-            <p onclick="a24();">74+92</p>
-            <p onclick="a25();">09+66</p>
-        </section>
-
-        <section>
-            <p onclick="a26();">74+63</p>
-            <p onclick="a27();">73+933</p>
-            <p onclick="a28();">28+43</p>
-            <p onclick="a29();">97+42</p>
-            <p onclick="a30();">764+66</p>
-        </section>
-
-        <section>
-            <p onclick="a31();">39+47</p>
-            <p onclick="a32();">86+48</p>
-            <p onclick="a33();">97+44</p>
-            <p onclick="a34();">18+80</p>
-            <p onclick="a35();">74+92</p>
-        </section>
-
-        <section>
-            <p onclick="a36();">79+34</p>
-            <p onclick="a37();">45+98</p>
-            <p onclick="a38();">7+39</p>
-            <p onclick="a39();">77+77</p>
-            <p onclick="a40();">94+85</p>
-        </section>
-
-        <section>
-            <p onclick="a41();">72+93</p>
-            <p onclick="a42();">72+111</p>
-            <p onclick="a43();">84+24</p>
-            <p onclick="a44();">277+33</p>
-            <p onclick="a45();">97+43</p>
-        </section>
-
-        <section>
-            <p onclick="a46();">63+83</p>
-            <p onclick="a47();">83+74</p>
-            <p onclick="a48();">29+44</p>
-            <p onclick="a49();">93+74</p>
-            <p onclick="a50();">83+74</p>
-        </section>
-
-        <hr>
-
-        <div class="a">
-            <p>ၼပ်ႉသွၼ်ႇတူၺ်းတူဝ်ၼပ်ႉပႃႈတႂ်ႈၼႆႉလူး</p>
-        </div>
-
-        <section>
-            <p onclick="b1();">12+67</p>
-            <p onclick="b2();">8+629</p>
-            <p onclick="b3();">125+73</p>
-            <p onclick="a4();">13+31</p>
-            <p onclick="a5();">54+21</p>
-        </section>
-            
-        <section>
-            <p onclick="a6();">18+91</p>
-            <p onclick="a7();">51+88</p>
-            <p onclick="a8();">76+52</p>
-            <p onclick="a9();">269</p>
-            <p onclick="a10();">662+91</p>
-        </section>
-
-        <section>
-            <p onclick="a11();">17+72</p>
-            <p onclick="a12();">16+28</p>
-            <p onclick="a13();">98+21</p>
-            <p onclick="a14();">56+322</p>
-            <p onclick="a15();">75+38</p>
-        </section>
-
-        <section>
-            <p onclick="a16();">97+34</p>
-            <p onclick="a17();">877+65</p>
-            <p onclick="a18();">93+88</p>
-            <p onclick="a19();">63+874</p>
-            <p onclick="a20();">78+74</p>
-        </section>
-
-        <section>
-            <p onclick="a21();">37+84</p>
-            <p onclick="a22();">746+82</p>
-            <p onclick="a23();">68+32</p>
-            <p onclick="a24();">74+92</p>
-            <p onclick="a25();">09+66</p>
-        </section>
-
-        <section>
-            <p onclick="a26();">74+63</p>
-            <p onclick="a27();">73+933</p>
-            <p onclick="a28();">28+43</p>
-            <p onclick="a29();">97+42</p>
-            <p onclick="a30();">764+66</p>
-        </section>
-
-        <section>
-            <p onclick="a31();">39+47</p>
-            <p onclick="a32();">86+48</p>
-            <p onclick="a33();">97+44</p>
-            <p onclick="a34();">18+80</p>
-            <p onclick="a35();">74+92</p>
-        </section>
-
-        <section>
-            <p onclick="a36();">79+34</p>
-            <p onclick="a37();">45+98</p>
-            <p onclick="a38();">7+39</p>
-            <p onclick="a39();">77+77</p>
-            <p onclick="a40();">94+85</p>
-        </section>
-
-        <section>
-            <p onclick="a41();">72+93</p>
-            <p onclick="a42();">72+111</p>
-            <p onclick="a43();">84+24</p>
-            <p onclick="a44();">277+33</p>
-            <p onclick="a45();">97+43</p>
-        </section>
-
-        <section>
-            <p onclick="a46();">63+83</p>
-            <p onclick="a47();">83+74</p>
-            <p onclick="a48();">29+44</p>
-            <p onclick="a49();">93+74</p>
-            <p onclick="a50();">83+74</p>
-        </section>
-
-    </main>
+/* section end*/
     
-    
-    <!-- js start -->
-    <script>
-        function a1(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 79  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a2(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 637  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a3(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 198  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a4(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 44  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a5(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 75  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a6(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 109  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a7(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 139  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a8(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 128  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a9(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 35  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a10(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 753  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a11(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 89  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a12(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 44  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a13(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 119  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a14(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 378  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a15(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 113  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a16(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 131  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a17(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 942  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a18(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 181  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a19(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 937  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a20(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 152  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a21(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 121  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a22(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 828  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a23(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 100  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a24(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 166  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a25(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 75  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a26(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 137  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a27(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 1006  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a28(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 71  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a29(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 139  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a30(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 830  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a31(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 86  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a32(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 134  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a33(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 141  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a34(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 98  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a35(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 166  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a36(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 113  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a37(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 143  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a38(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 46  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a39(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 154  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a40(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 179  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a41(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 165  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a42(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 183  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a43(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 108  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a44(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 210  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a45(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 140  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a46(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 146  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a47(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 157  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a48(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 73  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a49(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 167  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-        function a50(){
-            alert("ၶေႃႈတွပ်ႇမၼ်းပဵၼ် = 157  \n\nသင်ဝႃႈၶႂ်ႈၵမ်ႉထႅမ်ပၼ်ႁႅင်း \nဢမ်ႇၼၼ်\nၶႂ်ႈလူင်းၵုတ်းသၼႃးၼႆၸိုင်  \nတၵ်ႉမႃးလႆႈတီႈ \nFB-SengZarmCeo \nTikTok-CEO M ");
-        }
-
-
-        
-    </script>
-</body>
-</html>
