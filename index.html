@@ -293,13 +293,32 @@ section p{
         width: 100%;
         column-count: 3;
     }
+}
+#btt{
+            padding: 1.5rem;
+            border: none;
+            background-color: rgb(145, 255, 0);
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            border-radius: 50px;
+            position: fixed;
+            z-index: 1;
+            width: 180px;
+            height: 60px;
+            right: 1rem;
+            bottom: 3rem;
+            right: 40rem;
+            box-shadow: 0 9px 14px black;
+        }
 
-    main section{
-        
+    #btt a{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -8px;
         
     }
-    
-}
 
     </style>
 </head>
@@ -417,6 +436,31 @@ section p{
 
 
     <!-- main end -->
+
+    <div class="div-b">
+        <button onclick="back();" id="btt" title="ပွၵ်ႈၶိုၼ်းတင်းၼိူဝ်"><a href="https://www.facebook.com/profile.php?id=61552245621633&mibextid=LQQJ4d">ၵပ်းသိုပ်ႇ 💬</a></button>
+    </div>
+
+    <script>
+        let mybtt = document.getElementById("btt");
+    
+        
+        function scrollFuntion() {
+            if (document.body.scrollTopn > 5 || document.documentElement.scrollTop > 5) {
+                mybtt.style.display = "block";
+            } else
+                mybtt.style.display = "none";
+        }
+    
+        window.onscroll = function() {
+            scrollFuntion();
+        }
+    
+        function back() {
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+        } 
+    </script>
 
 </body>
 </html>
